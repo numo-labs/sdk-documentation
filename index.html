@@ -82,7 +82,12 @@
           </tbody>
         </table>
       </p>
-      <h6>Example</h6>
+      <h6>Example <input id="departureAirportInput-ex1" type="text" placeholder="Departure airport" list="departureAirportList-ex1"><input id="destinationInput-ex1" type="text" placeholder="Destination" list="destinationList-ex1"></h6>
+
+        <div class="six column">
+          <datalist id="departureAirportList-ex1"></datalist>
+          <datalist id="destinationList-ex1"></datalist>
+        </div>
         <pre><code>
 const autocomplete = sdk.autocomplete('destination');
 
@@ -124,14 +129,20 @@ autocomplete.for('spa', &lt;airport_code&gt;, function (err, result) {});
           </tbody>
         </table>
       </p>
-      <h6>Example</h6>
+      <h6>Example <input id="departureAirportInput-ex2" type="text" placeholder="Departure airport" list="departureAirportList-ex2"></h6>
+
+        <div class="six column">
+          <datalist id="departureAirportList-ex2"></datalist>
+        </div>
+
         <pre><code>
 const autocomplete = sdk.autocomplete('departure_airport');
 
 autocomplete.for('lon', function (err, result) {});
         </code></pre>
-
       </div>
     </div>
+    <script type="text/javascript" src="sdk.js"></script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
