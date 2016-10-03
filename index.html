@@ -82,7 +82,12 @@
           </tbody>
         </table>
       </p>
-      <h6>Example</h6>
+      <h6>Example <input id="departureAirportInput-ex1" type="text" placeholder="Departure airport" list="departureAirportList-ex1"><input id="destinationInput-ex1" type="text" placeholder="Destination" list="destinationList-ex1"></h6>
+
+        <div class="six column">
+          <datalist id="departureAirportList-ex1"></datalist>
+          <datalist id="destinationList-ex1"></datalist>
+        </div>
         <pre><code>
 const autocomplete = sdk.autocomplete('destination');
 
@@ -124,14 +129,85 @@ autocomplete.for('spa', &lt;airport_code&gt;, function (err, result) {});
           </tbody>
         </table>
       </p>
-      <h6>Example</h6>
+      <h6>Example <input id="departureAirportInput-ex2" type="text" placeholder="Departure airport" list="departureAirportList-ex2"></h6>
+
+        <div class="six column">
+          <datalist id="departureAirportList-ex2"></datalist>
+        </div>
+
         <pre><code>
 const autocomplete = sdk.autocomplete('departure_airport');
 
 autocomplete.for('lon', function (err, result) {});
         </code></pre>
-
       </div>
     </div>
+    <script src="sdk.js"></script>
+    <script type="text/javascript">
+        (function () {
+            var input = document.getElementById('departureAirportInput-ex2');
+            var datalist = document.getElementById('departureAirportList-ex2');
+            var sdk = SDK.init('uk');
+            var autocomplete = sdk.autocomplete('departure_airport');
+            input.onkeyup = function (event) {
+              if(event.keyCode > 36 && event.keyCode < 41){
+                return;
+              }
+              while (datalist.firstChild) {
+                datalist.removeChild(datalist.firstChild);
+              }
+              autocomplete.for(input.value, function (err, elements) {
+                elements.map(function (item) {
+                  var option = document.createElement('option');
+                  option.setAttribute('value', item);
+                  datalist.appendChild(option);
+                });
+              });
+            };
+        })();
+      </script>
+        <script type="text/javascript">
+        (function () {
+            var sdk = SDK.init('uk');
+
+            var inputDep = document.getElementById('departureAirportInput-ex1');
+            var datalistDep = document.getElementById('departureAirportList-ex1');
+            var autocomplete = sdk.autocomplete('departure_airport');
+            inputDep.onkeyup = function (event) {
+              if(event.keyCode > 36 && event.keyCode < 41){
+                return;
+              }
+              while (datalistDep.firstChild) {
+                datalistDep.removeChild(datalistDep.firstChild);
+              }
+              autocomplete.for(inputDep.value, function (err, elements) {
+                elements.map(function (item) {
+                  var option = document.createElement('option');
+                  option.setAttribute('value', item);
+                  datalistDep.appendChild(option);
+                });
+              });
+            };
+
+            var inputDest = document.getElementById('destinationInput-ex1');
+            var datalistDest = document.getElementById('destinationList-ex1');
+            var autocompleteDest = sdk.autocomplete('destination');
+            inputDest.onkeyup = function (event) {
+              if(event.keyCode > 36 && event.keyCode < 41){
+                return;
+              }
+              while (datalistDest.firstChild) {
+                datalistDest.removeChild(datalistDest.firstChild);
+              }
+              autocompleteDest.for(inputDest.value, inputDep.value, function (err, elements) {
+                elements.map(function (item) {
+                  var option = document.createElement('option');
+                  option.setAttribute('value', item);
+                  datalistDest.appendChild(option);
+                });
+              });
+            };
+        })();
+      </script>
   </body>
 </html>
