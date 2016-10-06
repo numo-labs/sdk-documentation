@@ -57,7 +57,7 @@
       </div>
       <!-- BREAK -->
     <div class="row">
-        <div class="six columns"><div class="hr-light"></div></div>
+        <div class="six columns no-margin"><div class="hr-light"></div></div>
         <div class="six columns"><div class="hr-dark"></div></div>
       </div>
       <div class="row">
@@ -107,7 +107,7 @@
       </div>
       <!-- BREAK -->
     <div class="row">
-        <div class="six columns"><div class="hr-light"></div></div>
+        <div class="six columns no-margin"><div class="hr-light"></div></div>
         <div class="six columns"><div class="hr-dark"></div></div>
       </div>
       <div class="row">
@@ -223,16 +223,26 @@
           </pre>
         </div>
       </div>
-      <!-- BREAK -->
-      <div class="row">
-        <div class="hr-light"></div>
-        <div class="hr-dark"></div>
-      </div>
-    </div>
+    <destination></destination>
   </div>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+  <!-- include tags -->
+  <script type="riot/tag" src="tags/entity.tag"></script>
+  <script type="riot/tag" src="tags/function.tag"></script>
+  <script type="riot/tag" src="tags/example.tag"></script>
+  <script type="riot/tag" src="tags/block.tag"></script>
+  <script type="riot/tag" src="tags/destination/destination.tag"></script>
+
+  <!-- include riot.js -->
+  <script src="https://cdn.jsdelivr.net/riot/2.6/riot+compiler.min.js"></script>
+
+  <!-- mount the tags -->
+  <script>
+    riot.mount('destination');
+  </script>
 </body>
 
 </html>
