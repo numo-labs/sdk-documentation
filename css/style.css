@@ -6,6 +6,11 @@ li {
     list-style: none;
 }
 
+:target {
+    background: #f0f4f7;
+    padding-left: 10px;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -67,6 +72,14 @@ li {
 }
 
 .hr {
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 1px solid #f0f4f7;
     margin: 50px 0 0 0;
+}
+
+.hr-light {
+    border-bottom: 1px solid #f0f4f7;
+}
+
+.hr-dark {
+    border-bottom: 1px solid #777676;
 }
