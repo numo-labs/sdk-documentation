@@ -34,6 +34,8 @@
     <yield to="right">
         <h5>{opts.title}</h5>
         <pre class="prettyprint lang-js">
+
+        
   var destination = sdk.destination;
   sdk.destination.query(\{
     name_prefix: "spa", 
