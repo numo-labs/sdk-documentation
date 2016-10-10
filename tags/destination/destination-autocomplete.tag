@@ -10,10 +10,8 @@
     <yield to="right">
         <h5>{opts.title}</h5>
         <pre class="prettyprint lang-js">
-
-        
-  var destination = sdk.destination; 
-  dk.destination.autocomplete('spa', 10);
+var destination = sdk.destination; 
+dk.destination.autocomplete('spa', 10);
         </pre>
     </yield>
   </block>  

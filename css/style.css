@@ -26,6 +26,10 @@ li {
     margin: 0;
 }
 
+.prettyprint {
+    padding: 20px 20px 0 20px !important;
+}
+
 #sidebar {
     position: absolute;
     width: 220px;
