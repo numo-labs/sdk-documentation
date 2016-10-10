@@ -1,5 +1,5 @@
 <airport-query>
-  <block title="Query">
+  <block title="Query" anchor="doc_airport_query">
     <yield to="left">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent neque lectus, aliquet ut ex ut, blandit consequat justo.

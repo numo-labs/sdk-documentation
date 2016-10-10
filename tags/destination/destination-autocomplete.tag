@@ -1,5 +1,5 @@
 <destination-autocomplete>
-  <block title="Autocomplete">
+  <block title="Autocomplete" anchor="doc_destination_autocomplete"}>
     <yield to="left">
              <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent neque lectus, aliquet ut ex ut, blandit consequat justo.

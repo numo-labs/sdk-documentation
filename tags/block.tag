@@ -1,7 +1,7 @@
 <block>
     <div class="row">
         <div class="six columns">
-            <h5>{opts.title}</h5>
+            <h5 id={opts.anchor}>{opts.title}</h5>
             <yield from="left" />
         </div> 
         <div class="six columns color-light">
