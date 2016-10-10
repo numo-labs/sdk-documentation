@@ -35,10 +35,10 @@
         <h5>{opts.title}</h5>
         <pre class="prettyprint lang-js">
   var destination = sdk.destination;
-  sdk.destination.query({
+  sdk.destination.query(\{
     name_prefix: "spa", 
     limit: 10 
-  });
+  \});
         </pre>
     </yield>
   </block>  
