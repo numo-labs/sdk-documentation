@@ -22,6 +22,10 @@ li {
     padding: 20px;
 }
 
+.no-margin {
+    margin: 0;
+}
+
 #sidebar {
     position: absolute;
     width: 220px;
