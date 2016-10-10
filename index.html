@@ -40,209 +40,32 @@
   </div>
   <!-- Actual content goes here -->
   <div id="content">
-    <!-- ENTITY: DESTINATION -->
-    <div id="doc_destination">
-      <div class="row">
-        <div class="six columns">
-          <h4>Destination</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent neque lectus, aliquet ut ex ut, blandit consequat justo.
-            Morbi blandit, dui id rutrum tincidunt, nisi nunc iaculis lacus, a porta augue dui a nibh. In sollicitudin ante
-            vitae metus convallis ornare. Cras dolor est, auctor eu laoreet nec, iaculis non enim. Suspendisse a fringilla
-            sapien. Vivamus auctor lorem a nisl commodo consequat. Cras a dui massa. Fusce a mollis purus. Sed a pulvinar
-            sapien. Donec nisi magna, pharetra sed mollis et, vulputate ut nisi.
-          </p>
-        </div>
-        <div class="six columns"></div>
-      </div>
-      <!-- BREAK -->
-    <div class="row">
-        <div class="six columns no-margin"><div class="hr-light"></div></div>
-        <div class="six columns"><div class="hr-dark"></div></div>
-      </div>
-      <div class="row">
-        <div class="six columns">
-          <h5 id="doc_destination_query">Query</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent neque lectus, aliquet ut ex ut, blandit consequat justo.
-            Morbi blandit, dui id rutrum tincidunt, nisi nunc iaculis lacus, a porta augue dui a nibh. In sollicitudin ante
-            vitae metus convallis ornare. Cras dolor est, auctor
-          </p>
-          <table class="u-full-width">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Sex</th>
-                <th>Location</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Dave Gamache</td>
-                <td>26</td>
-                <td>Male</td>
-                <td>San Francisco</td>
-              </tr>
-              <tr>
-                <td>Dwayne Johnson</td>
-                <td>42</td>
-                <td>Male</td>
-                <td>Hayward</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="six columns color-light">
-          <h5>Example</h5>
-          <pre class="prettyprint lang-js">
-
-  var destination = sdk.destination;
-  sdk.destination.query({
-    name_prefix: "spa", 
-    limit: 10 
-  });
-          </pre>
-        </div>
-      </div>
-      <!-- BREAK -->
-    <div class="row">
-        <div class="six columns no-margin"><div class="hr-light"></div></div>
-        <div class="six columns"><div class="hr-dark"></div></div>
-      </div>
-      <div class="row">
-        <div class="six columns">
-          <h5 id="doc_destination_autocomplete">Autocomplete</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent neque lectus, aliquet ut ex ut, blandit consequat justo.
-            Morbi blandit, dui id rutrum tincidunt, nisi nunc iaculis lacus, a porta augue dui a nibh. In sollicitudin ante
-            vitae metus convallis ornare. Cras dolor est, auctor
-          </p>
-        </div>
-        <div class="six columns color-light">
-          <h5>Example</h5>
-          <pre class="prettyprint lang-js">
-
-  var destination = sdk.destination; 
-  dk.destination.autocomplete('spa', 10);
-          </pre>
-        </div>
-      </div>
-      <!-- BREAK -->
-    <div class="row">
-        <div class="six columns"><div class="hr-light"></div></div>
-        <div class="six columns"><div class="hr-dark"></div></div>
-      </div>
-    </div>
-    <!-- ENTITY: AIRPORT -->
-    <div id="doc_airport">
-      <div class="row">
-        <div class="six columns">
-          <h4>Airport</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent neque lectus, aliquet ut ex ut, blandit consequat justo.
-            Morbi blandit, dui id rutrum tincidunt, nisi nunc iaculis lacus, a porta augue dui a nibh. In sollicitudin ante
-            vitae metus convallis ornare. Cras dolor est, auctor eu laoreet nec, iaculis non enim. Suspendisse a fringilla
-            sapien. Vivamus auctor lorem a nisl commodo consequat. Cras a dui massa. Fusce a mollis purus. Sed a pulvinar
-            sapien. Donec nisi magna, pharetra sed mollis et, vulputate ut nisi.
-          </p>
-        </div>
-        <div class="six columns"></div>
-      </div>
-      <!-- BREAK -->
-     <div class="row">
-        <div class="six columns"><div class="hr-light"></div></div>
-        <div class="six columns"><div class="hr-dark"></div></div>
-      </div>
-      <div class="row">
-        <div class="six columns">
-          <h5 id="doc_airport_query">Query</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent neque lectus, aliquet ut ex ut, blandit consequat justo.
-            Morbi blandit, dui id rutrum tincidunt, nisi nunc iaculis lacus, a porta augue dui a nibh. In sollicitudin ante
-            vitae metus convallis ornare. Cras dolor est, auctor
-          </p>
-          <table class="u-full-width">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Sex</th>
-                <th>Location</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Dave Gamache</td>
-                <td>26</td>
-                <td>Male</td>
-                <td>San Francisco</td>
-              </tr>
-              <tr>
-                <td>Dwayne Johnson</td>
-                <td>42</td>
-                <td>Male</td>
-                <td>Hayward</td>
-              </tr>
-            </tbody>
-          </table>
-
-        </div>
-        <div class="six columns color-light">
-          <h5>Example</h5>
-          <pre class="prettyprint lang-js">
-
-  var destination = sdk.destination;
-  sdk.destination.query({
-    name_prefix: "spa", 
-    limit: 10 
-  });
-          </pre>
-        </div>
-      </div>
-      <!-- BREAK -->
-      <div class="row">
-        <div class="six columns"><div class="hr-light"></div></div>
-        <div class="six columns"><div class="hr-dark"></div></div>
-      </div>
-      <div class="row">
-        <div class="six columns">
-          <h5 id="doc_destination_autocomplete">Autocomplete</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent neque lectus, aliquet ut ex ut, blandit consequat justo.
-            Morbi blandit, dui id rutrum tincidunt, nisi nunc iaculis lacus, a porta augue dui a nibh. In sollicitudin ante
-            vitae metus convallis ornare. Cras dolor est, auctor
-          </p>
-        </div>
-        <div class="six columns color-light">
-          <h5>Example</h5>
-          <pre class="prettyprint lang-js">
-
-  var destination = sdk.destination; 
-  dk.destination.autocomplete('spa', 10);
-          </pre>
-        </div>
-      </div>
-    <destination></destination>
+   <destination></destination>
+   <airport></airport>
   </div>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
-  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-
+    
   <!-- include tags -->
   <script type="riot/tag" src="tags/entity.tag"></script>
-  <script type="riot/tag" src="tags/function.tag"></script>
-  <script type="riot/tag" src="tags/example.tag"></script>
   <script type="riot/tag" src="tags/block.tag"></script>
+  <script type="riot/tag" src="tags/destination/destination-query.tag"></script>
+  <script type="riot/tag" src="tags/destination/destination-autocomplete.tag"></script>
   <script type="riot/tag" src="tags/destination/destination.tag"></script>
+
+    <script type="riot/tag" src="tags/airport/aiport-query.tag"></script>
+  <script type="riot/tag" src="tags/airport/airport-autocomplete.tag"></script>
+  <script type="riot/tag" src="tags/airport/airport.tag"></script>
 
   <!-- include riot.js -->
   <script src="https://cdn.jsdelivr.net/riot/2.6/riot+compiler.min.js"></script>
 
   <!-- mount the tags -->
   <script>
-    riot.mount('destination');
+    riot.mount('*');
   </script>
+
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 </body>
 
 </html>
